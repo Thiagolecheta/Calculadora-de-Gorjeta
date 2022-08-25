@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Calculadora de Gorjeta</title>
+</head>
+<body>
+    <div class="container">
+        <div class="boxCalc">
+            <div class="leftArea">
+                <div class="bill">
+                    <div>Conta</div>
+                    <input type="text" id="bill">
+                </div>
+                <div class="areaSelectTip">
+                    <div class="tipInfo" >Selecione a gorjeta %</div>
+                    <div class="areaButtons">
+                        <div class="tipButton">5%</div>
+                        <div class="tipButton">10%</div>
+                        <div class="tipButton">15%</div>
+                        <div class="tipButton">20%</div>
+                        <div class="tipButton">50%</div>
+                        <div class="tipButton">outro</div>
+                    </div>
+                </div>
+                <div class="bill">
+                    <div>Numero de Pessoas</div>
+                    <input type="text" id="bill">
+                </div>
+            </div>
+            <div class="rightArea">
+                <div>
+                    <div class="tipAmountArea">
+                        <div class="tipAmountTitle">
+                            valor da gorjeta
+                            <p>/ Pessoa</p>
+                        </div> 
+                        
+                        <div class="valueTip">
+                            R$0.00
+                        </div>
+                    </div>
+                    <div class="tipAmountArea">
+                        <div class="tipAmountTitle">
+                            Total
+                            <p>/ Pessoa</p>
+                        </div> 
+                        
+                        <div class="valueTip">
+                            R$0.00
+                        </div>
+                    </div>
+                </div>
+                <div class="tipAmountArea">
+                    <button class="reset">Redefinir</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
