@@ -9,27 +9,29 @@
     <title>Calculadora de Gorjeta</title>
 </head>
 <body>
+    
     <div class="container">
         <div class="boxCalc">
             <div class="leftArea">
                 <div class="bill">
                     <div>Conta</div>
-                    <input type="text" id="bill">
+                    <input type="text" id="bill" placeholder="0">
+                </div>
+                <div class="bill">
+                    <div>Numero de Pessoas</div>
+                    <input type="text" id="people" placeholder="0">
                 </div>
                 <div class="areaSelectTip">
                     <div class="tipInfo" >Selecione a gorjeta %</div>
                     <div class="areaButtons">
-                        <div class="tipButton">5%</div>
-                        <div class="tipButton">10%</div>
-                        <div class="tipButton">15%</div>
-                        <div class="tipButton">20%</div>
-                        <div class="tipButton">50%</div>
-                        <div class="tipButton">outro</div>
+                        <div class="tipButton5" onclick="clicou('5')">5%</div>
+                        <div class="tipButton10" onclick="clicou('10')">10%</div>
+                        <div class="tipButton15" onclick="clicou('15')">15%</div>
+                        <div class="tipButton20" onclick="clicou('20')">20%</div>
+                        <div class="tipButton50" onclick="clicou('30')">30%</div>
+                        <div class="tipButton50" onclick="clicou('50')">50%</div>
+                        
                     </div>
-                </div>
-                <div class="bill">
-                    <div>Numero de Pessoas</div>
-                    <input type="text" id="bill">
                 </div>
             </div>
             <div class="rightArea">
@@ -40,7 +42,7 @@
                             <p>/ Pessoa</p>
                         </div> 
                         
-                        <div class="valueTip">
+                        <div class="valueTip1">
                             R$0.00
                         </div>
                     </div>
@@ -50,16 +52,29 @@
                             <p>/ Pessoa</p>
                         </div> 
                         
-                        <div class="valueTip">
+                        <div class="valueTip2">
+                            R$0.00
+                        </div>
+                    </div>
+                    <div class="tipAmountArea">
+                        <div class="tipAmountTitle">
+                            Total
+                        </div> 
+                        
+                        <div class="valueTip3">
                             R$0.00
                         </div>
                     </div>
                 </div>
                 <div class="tipAmountArea">
-                    <button class="reset">Redefinir</button>
+                    <button class="reset" onclick="redefinir()">Redefinir</button>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+    <script src="script/script.js"></script>
 </body>
 </html>

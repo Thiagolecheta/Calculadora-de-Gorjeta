@@ -53,11 +53,19 @@ body{
     background-color: #f3f8fb;
     border: none;
     border-radius: 8px;
+    padding: 5px;
 }
 
 .bill input:focus {
-    border: none;
-    border: 1px solid #69b5ad;
+    outline: none !important;
+    border:3px solid #479c90;
+} 
+
+.bill input::placeholder {
+    font-size: 20px;
+    color: #9fbebe;
+    text-align: right;
+    padding: 10px;
 }
 
 .areaSelectTip {
@@ -74,7 +82,11 @@ body{
 }
 
 
-.tipButton {
+.tipButton5,
+.tipButton10,
+.tipButton15,
+.tipButton20,
+.tipButton50 {
     margin: 15px;
     width: 130px;
     height: 45px;
@@ -83,8 +95,29 @@ body{
     border-radius: 8px;
     text-align: center;
     cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
 }
 
+.tipButton:hover{
+    background-color: #9fe8dd;
+    color: #003a3b;
+}
+
+.active input{
+    font-size: 16px;
+    margin: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 130px;
+    height: 45px;
+    background-color: #f3f8fb;
+    border: 3px solid #9fe8df;
+    color: #2a656d;
+}
 
 .rightArea {
     width: 80%;
@@ -102,6 +135,11 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+.tipAmountArea .reset {
+    margin: 2px;
+}
+
 .tipAmountTitle{
     color: #fff;
     font-size: 18px;
@@ -112,7 +150,9 @@ body{
     color: #599296;
 }
 
-.valueTip {
+.valueTip1,
+.valueTip2,
+.valueTip3 {
     font-size: 40px;
     color: #21ccb1;
 }
@@ -125,4 +165,37 @@ body{
     height: 45px;
     border: none;
     border-radius: 5px;
+    transition: 2s;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background-color: #26c2ad;
+    color: #00474b;
+}
+
+
+
+@media (max-width: 900px) {
+    
+    
+
+    .boxCalc{
+        display: flex;
+        flex-direction: column-reverse;
+        height: auto;
+        margin-top: 300px;
+    }
+    
+    .rightArea{
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
+    
+    .areaButtons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
